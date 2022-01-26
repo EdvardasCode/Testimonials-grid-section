@@ -106,7 +106,7 @@ img {
 }
 
 .card .info .verified-dark {
-  color: black;
+  color: rgba(0, 0, 0, 0.664);
 }
 
 .card .test {
@@ -134,7 +134,7 @@ img {
   -ms-grid-column-span: 2;
   grid-area: card1;
   background-color: #7541c8;
-  background-image: url("/static/bg-pattern-quotation.svg?inline");
+  background-image: url("./static/bg-pattern-quotation.svg?inline");
   background-repeat: no-repeat;
   background-position: left 80% top 0;
 }
