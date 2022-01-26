@@ -1,0 +1,204 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  word-spacing: 0.1em;
+  word-break: break-word;
+}
+
+h4,
+h5 {
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  background-color: #edf2f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+img {
+  border-radius: 50%;
+  border: solid 2px rgba(255, 255, 255, 0.274);
+  width: 40px;
+  height: 40px;
+}
+
+.table {
+  max-width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 'card1 card1 card2 card5' 'card3 card4 card4 card5';
+  row-gap: 2rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 auto;
+}
+
+.card {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 1.5rem 3rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: inset 5px 5px 10px #00000063, inset -5px -5px 10px rgba(0, 0, 255, 0.438);
+          box-shadow: inset 5px 5px 10px #00000063, inset -5px -5px 10px rgba(0, 0, 255, 0.438);
+}
+
+.card .info {
+  margin-left: 0.5rem;
+}
+
+.card .info .name-light {
+  color: white;
+}
+
+.card .info .verified-light {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.card .info .name-dark {
+  color: black;
+}
+
+.card .info .verified-dark {
+  color: black;
+}
+
+.card .test {
+  padding: 1.5rem 0;
+  color: white;
+}
+
+.card .test-dark {
+  color: black;
+  padding: 1.5rem 0;
+}
+
+.card p {
+  color: rgba(255, 255, 255, 0.493);
+}
+
+.card:hover {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.daniel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: card1;
+  background-color: #7541c8;
+  background-image: url(/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: left 80% top 0;
+}
+
+.kira {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: card5;
+}
+
+.kira p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.jean {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card3;
+}
+
+.jean p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.pat {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: card4;
+  background-color: #19212e;
+}
+
+.jona {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: card2;
+  background-color: #48556a;
+}
+
+.name-verified {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 70em) {
+  .table {
+    display: -ms-grid;
+    display: grid;
+    gap: 1.5rem;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+    margin: 5% 5%;
+        grid-template-areas: 'card1 card1 card1' 'card2 card2 card2' 'card3 card3 card3' 'card4 card4 card4' 'card5 card5 card5';
+  }
+}
+/*# sourceMappingURL=style.css.map */

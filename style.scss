@@ -1,0 +1,154 @@
+//colors
+$bblue: hsl(219, 29%, 14%);
+$gblue: hsl(217, 19%, 35%);
+$violet: hsl(263, 55%, 52%);
+
+$textColorLight: hsl(0, 0%, 81%);
+$textColorDark: hsl(210, 46%, 95%);
+
+$backGround: #edf2f8;
+$darkTextColor: #72757d;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    word-spacing: 0.1em;
+    word-break: break-word;
+}
+h4,
+h5 {
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+html {
+    font-size: 13px;
+}
+
+body {
+    background-color: $backGround;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    border: solid 2px rgba(255, 255, 255, 0.274);
+    width: 40px;
+    height: 40px;
+}
+
+.table {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 'card1 card1 card2 card5' 'card3 card4 card4 card5';
+    row-gap: 2rem;
+    column-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.card {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 1.5rem 3rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 5px 5px 10px #00000063,
+        inset -5px -5px 10px rgba(0, 0, 255, 0.438);
+    .info {
+        margin-left: 0.5rem;
+        .name-light {
+            color: white;
+        }
+        .verified-light {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .name-dark {
+            color: black;
+        }
+        .verified-dark {
+            color: black;
+        }
+    }
+    .test {
+        padding: 1.5rem 0;
+        color: white;
+    }
+    .test-dark {
+        color: black;
+        padding: 1.5rem 0;
+    }
+    p {
+        color: rgba(255, 255, 255, 0.493);
+    }
+}
+
+.card:hover {
+    transform: scale(0.99);
+}
+
+.daniel {
+    grid-area: card1;
+    background-color: $violet;
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: left 80% top 0;
+}
+
+.kira {
+    grid-area: card5;
+    p {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.jean {
+    grid-area: card3;
+    p {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.pat {
+    grid-area: card4;
+    background-color: $bblue;
+}
+
+.jona {
+    grid-area: card2;
+    background-color: $gblue;
+}
+
+.name-verified {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 70em) {
+    .table {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, auto);
+        margin: 5% 5%;
+        grid-template-areas: 'card1 card1 card1' 'card2 card2 card2' 'card3 card3 card3' 'card4 card4 card4' 'card5 card5 card5';
+    }
+}
