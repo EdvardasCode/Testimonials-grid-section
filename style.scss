@@ -2,10 +2,7 @@
 $bblue: hsl(219, 29%, 14%);
 $gblue: hsl(217, 19%, 35%);
 $violet: hsl(263, 55%, 52%);
-
 $textColorLight: hsl(0, 0%, 81%);
-$textColorDark: hsl(210, 46%, 95%);
-
 $backGround: #edf2f8;
 $darkTextColor: #72757d;
 
@@ -107,7 +104,7 @@ img {
 .daniel {
     grid-area: card1;
     background-color: $violet;
-    background-image: url('/images/bg-pattern-quotation.svg');
+    background-image: url('/static/bg-pattern-quotation.svg');
     background-repeat: no-repeat;
     background-position: left 80% top 0;
 }
