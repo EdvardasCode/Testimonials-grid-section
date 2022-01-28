@@ -85,8 +85,6 @@ img {
   padding: 1.5rem 3rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  -webkit-box-shadow: inset 5px 5px 10px #00000063, inset -5px -5px 10px rgba(0, 0, 255, 0.438);
-          box-shadow: inset 5px 5px 10px #00000063, inset -5px -5px 10px rgba(0, 0, 255, 0.438);
 }
 
 .card .info {
